@@ -1,0 +1,65 @@
+.container {
+     
+    background-color:#272822;
+    
+    text-align: center;
+   margin: 30px;
+   left:40%;
+    width:25%;
+    height:400px;
+    
+    
+}
+.calc{
+position: absolute;
+ background-color: cornsilk;
+ color: black;
+ 
+ font-size: 20px;
+ /*margin : 150px;*/
+ 
+ 
+ transition: all 1s ease-in-out ; 
+ 
+
+}
+
+audio {
+
+    display: none ;
+}
+
+.calc:hover{
+    transform: translateY(5px) translateX(60px) scale(1.20);
+    
+}
+table {
+    
+    margin:0 auto ;
+    box-shadow: -5px 5px 5px darkgray;
+}
+td{
+    
+    width : 20px ;
+    height: 20px;
+     border:1px solid yellow;
+    text-align:center;
+    padding: 10px;
+}
+td:hover{
+
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#screen:hover{
+
+    background-color: cornsilk; 
+    border-radius:0%; 
+   
+}
+input{
+    text-align: center;
+    border:2px solid white ;
+    box-shadow:4px 4px 4px yellow;
+}

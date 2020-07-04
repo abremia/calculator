@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculatrice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Calculatrice</h1>
+            <div>
+                <audio controls id="num">
+                <source src="numbers/1.mp3" />
+                </audio>
+            </div>
+           <div class="calc">
+            <table>
+                <tr>
+                    <td colspan="4" id="screen"><input id="inp" type="text" value="0"></td>
+                </tr>
+                <tr>
+                    <td onclick="toColor('lightgreen');">G</td>
+                    <td onclick="window.inp.value=0">C</td>
+                    <td onclick="toColor('lightcoral');">R</td>
+                    <td onclick="retInput();window.inp.value=0;setvalue(this);playNum(this)">÷</td>
+                </tr>
+                   
+                <tr>
+                    <td onclick="valueInput(this);playNum(this)">7</td>
+                    <td onclick="valueInput(this);playNum(this)">8</td>
+                    <td onclick="valueInput(this);playNum(this)">9</td>
+                    <td onclick="retInput();window.inp.value=0;setvalue(this);playNum(this)">x</td>
+                </tr>
+                <tr>
+                    <td onclick="valueInput(this);playNum(this)">4</td>
+                    <td onclick="valueInput(this);playNum(this)">5</td>
+                    <td onclick="valueInput(this);playNum(this)">6</td>
+                    <td onclick="retInput();window.inp.value=0;setvalue(this);playNum(this)">-</td>
+                </tr>
+                <tr>
+                    <td onclick="valueInput(this);playNum(this)">1</td>
+                    <td onclick="valueInput(this);playNum(this)">2</td>
+                    <td onclick="valueInput(this);playNum(this)">3</td>
+                    <td onclick="retInput();window.inp.value=0;setvalue(this);playNum(this)">+</td>
+                </tr>
+                <tr>
+                    <td onclick="retInput();window.inp.value=0;setvalue(this);playNum(this)">%</td>
+                    <td onclick="valueInput(this);">0</td>
+                    <td onclick="valueInput(this);">.</td>
+                    <td  onclick="result();">=</td>
+                </tr>
+
+            </table>
+
+           </div>
+
+        </div>
+        
+        <script src="calc.js"></script>
+    </body>
+</html>
